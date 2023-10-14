@@ -1,0 +1,65 @@
+@import '_adapt_index.scss';
+
+body {
+    background-image: url("../img/coffee.jpg");
+    background-size: cover;
+    color: #FFDEAD;
+    font-family: Monotype Corsiva;
+}
+
+.hat_p {
+        margin: 0;
+    }
+
+.rain {
+    position: absolute;
+    bottom: 4%;
+    left: 4%;
+
+    a {
+        &:link, &:hover, &:active, &:visited {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.grid_table {
+    display: grid;
+    float: right;
+    justify-content: right;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid_coffee{
+    display: grid;
+    justify-content: center;
+}
+
+#one {
+    border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
+    border: 4px solid grey; /*устанавливаем для таблицы внешнюю границу серого цвета*/
+    width: 200px;
+    text-align: center;
+    background-color: #FAFAD2;
+}
+
+caption {
+    font-size: 30px;
+    margin: 10px;
+}
+
+th {
+    border: 2px solid grey; /* границы ячеек первого ряда таблицы */
+    color: black;
+}
+
+td {
+    border: 2px solid grey; /* границы ячеек тела таблицы */
+    color: #1E90FF;
+    :hover {
+        background: #0078BF;
+        color: #fff;
+    }
+}

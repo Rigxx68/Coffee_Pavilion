@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@media screen and (min-width: 960px) {
+  .grid_table {
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+  }
+  .sort_coffee {
+    height: 140px;
+  }
+  .hat {
+    font-size: 40px;
+    margin: 10px;
+  }
+  .rain {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 959px) {
+  .grid_table {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .sort_coffee {
+    height: 90px;
+  }
+  .hat {
+    font-size: 30px;
+    margin: 8px;
+  }
+  .rain {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .grid_table {
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+  .sort_coffee {
+    height: 50px;
+  }
+  .hat {
+    font-size: 20px;
+    margin: 5px;
+  }
+  .rain {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .grid_table {
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+  .sort_coffee {
+    height: 30px;
+  }
+  .hat {
+    font-size: 10px;
+    margin: 2px;
+  }
+  .rain {
+    font-size: 8px;
+  }
+}
+body {
+  background-image: url("../img/coffee.jpg");
+  background-size: cover;
+  color: #FFDEAD;
+  font-family: Monotype Corsiva;
+}
+
+.hat_p {
+  margin: 0;
+}
+
+.rain {
+  position: absolute;
+  bottom: 4%;
+  left: 4%;
+}
+.rain a:link, .rain a:hover, .rain a:active, .rain a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.grid_table {
+  display: grid;
+  float: right;
+  justify-content: right;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid_coffee {
+  display: grid;
+  justify-content: center;
+}
+
+#one {
+  border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
+  border: 4px solid grey; /*устанавливаем для таблицы внешнюю границу серого цвета*/
+  width: 200px;
+  text-align: center;
+  background-color: #FAFAD2;
+}
+
+caption {
+  font-size: 30px;
+  margin: 10px;
+}
+
+th {
+  border: 2px solid grey; /* границы ячеек первого ряда таблицы */
+  color: black;
+}
+
+td {
+  border: 2px solid grey; /* границы ячеек тела таблицы */
+  color: #1E90FF;
+}
+td :hover {
+  background: #0078BF;
+  color: #fff;
+}

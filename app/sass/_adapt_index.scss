@@ -1,0 +1,80 @@
+
+@media screen and (min-width: 960px) {
+    .grid_table {
+        grid-column-gap: 12px;
+        grid-row-gap: 12px;
+    } 
+    
+    .sort_coffee {
+        height: 140px;
+    }
+
+    .hat {
+        font-size: 40px;
+        margin: 10px;
+    }
+
+    .rain {
+        font-size:25px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 959px) {
+    .grid_table {
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    } 
+    
+    .sort_coffee {
+        height: 90px;
+    }
+
+    .hat {
+        font-size: 30px;
+        margin: 8px;
+    }
+
+    .rain {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    .grid_table {
+        grid-column-gap: 8px;
+        grid-row-gap: 8px;
+    } 
+    
+    .sort_coffee {
+        height: 50px;
+    }
+
+    .hat {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .rain {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .grid_table {
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    } 
+    
+    .sort_coffee {
+        height: 30px;
+    }
+
+    .hat {
+        font-size: 10px;
+        margin: 2px;
+    }
+
+    .rain {
+        font-size: 8px;
+    }
+}

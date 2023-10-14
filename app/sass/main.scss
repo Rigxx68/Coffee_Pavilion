@@ -1,0 +1,75 @@
+@import '_adapt.scss';
+
+html {
+    background-color: #FFDEAD;
+    font-family: Monotype Corsiva;
+}
+
+.inf {
+    //float: left;
+    text-align: justify;
+}
+
+.heading {
+    border: none;
+    text-align: center;
+}
+
+.bodyInf {
+    font-family: Arial;
+    border: double black;
+}
+
+.bold {
+    font-weight: bold;
+    margin: 10px;
+}
+
+.coffee {
+    float: left;
+    padding: 0px;
+    border: double black;
+}
+
+.wk {
+    border: 4px double white;
+}
+
+
+.menu {
+    text-align: center;
+    text-indent: 0;
+    border-left: 2px;
+    border: 2px black;
+}
+
+.bodyMenu {
+    border: 2px black;
+}
+
+a {
+
+    &:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: #00008B;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    &:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: none;
+    }
+}
